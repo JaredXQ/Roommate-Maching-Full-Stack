@@ -1,0 +1,86 @@
+@import '../../theme.scss';
+*{
+  white-space: pre-wrap;
+}
+.questionBox {
+  margin-top: 150px;
+  height: 100px;
+  width: 50vw;
+  border: 2px solid $themeColor;
+  background: $primaryBackgroundColor;
+  border-radius: 50px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 150px;
+  color:$themeColor
+}
+
+.boxQuestion {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: right;
+}
+
+.ternaryQuestion {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  //z-index: 0;
+  background: linear-gradient(
+                  90deg,
+                  $primaryBackgroundColor 33.3%,
+                  $lightOrange 33.3%,
+                  $lightOrange 66.6%,
+                  $themeColor 66.6%
+  );
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputBox {
+  height: 80px;
+  width: 30vw;
+  border-radius: 48px;
+  border: 4px solid $orange;
+  margin-bottom: 50px;
+}
+
+.btn {
+  height: 80px;
+  width: 15vw;
+  border-radius: 48px;
+  background: $orange;
+  color: white;
+  line-height: 80px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.choices{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-around;
+  alignment: center;
+}
+
+.choice1{
+  font-size: 3vw;
+}
+
+.choice2{
+  font-size: 3vw;
+}
+
+.choices{
+  font-size: 3vw;
+}

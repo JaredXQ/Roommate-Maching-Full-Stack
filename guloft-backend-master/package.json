@@ -1,0 +1,36 @@
+{
+  "name": "guloft_server",
+  "version": "1.0.0",
+  "description": "CS498RK Fall 2021 Final Project",
+  "authors": [
+    "Eason Lu <yichen14@illinois.edu>",
+    "Jianyuan Zhan <zhan32@illinois.edu>"
+  ],
+  "scripts": {
+    "start": "nodemon --exec node server.js",
+    "prod": "pm2-runtime server.js"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MythSama/guloft-backend.git"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.4.18",
+    "nodemon": "^1.11.0",
+    "pm2": "^5.1.2",
+    "validator": "^13.7.0"
+  }
+}

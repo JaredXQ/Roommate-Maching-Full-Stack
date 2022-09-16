@@ -1,0 +1,3 @@
+#!/bin/bash
+docker build . -t karywjh/guloft:latest --platform linux/amd64
+docker push karywjh/guloft:latest

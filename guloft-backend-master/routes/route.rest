@@ -1,0 +1,65 @@
+POST http://localhost:4000/users
+content-type: application/json
+
+{
+    "username": "Eason",
+    "email": "ea2esw3ed2ssd2o@illinois.edu",
+    "password": "hashed_password"
+}
+###
+GET http://localhost:4000/api/users/61b66f14715b2e2f953e2131
+
+###
+GET http://localhost:4000/user-c-info/61ba434b2405d9f5b9083349
+
+###
+PUT http://localhost:4000/api/p-info/61b66f14715b2e2f953e2131
+content-type: application/json
+
+{
+    "question": "gender",
+    "answer": "male"
+}
+
+###
+GET http://localhost:4000/api/p-info/61b66f14715b2e2f953e2131
+
+###
+PUT http://localhost:4000/api/m-info/61b66f14715b2e2f953e2131
+content-type: application/json
+
+{
+    "question": "q2",
+    "answer": "123"
+}
+
+###
+GET http://localhost:4000/api/m-info/61b66f14715b2e2f953e2131
+
+###
+GET http://localhost:4000/api/user-favlist/61b66f14715b2e2f953e2131
+
+###
+POST http://localhost:4000/api/user-favlist/61b66f14715b2e2f953e2131
+content-type: application/json
+
+{
+    "userID": "61b667383031822707148f1a"
+}
+
+###
+DELETE  http://localhost:4000/api/user-favlist/61b66f14715b2e2f953e2131
+content-type: application/json
+
+{
+    "userID": "61b667383031822707148f1a"
+}
+
+
+
+
+###
+GET http://localhost:4000/matching-result/me
+content-type: application/x-www-form-urlencoded
+Accept: text/plain
+Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWJhNDM0YjI0MDVkOWY1YjkwODMzNDkiLCJpYXQiOjE2Mzk1OTY4NzV9.umIBCCGB2x4y8J2fCsHfH7BM3PN0Q6cA7HoOzN93xjg

@@ -1,0 +1,173 @@
+@import '../../theme.scss';
+
+.roommateCard {
+  background-color: $lightOrange;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2%;
+  padding-left: 0;
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.07), -4px -4px 13px #ffffff,
+    6px 6px 36px rgba(0, 0, 0, 0.06);
+  margin: $marg;
+
+  .leftCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 45%;
+  }
+
+  .rightCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: relative;
+    background-color: white;
+    width: 55%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 5%;
+
+    .matchingInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+
+      .matchName {
+        color: $dark1;
+        font-size: 1.2rem;
+        font-weight: 450;
+        white-space: pre-wrap;
+        overflow: hidden;
+        text-overflow: clip;
+      }
+
+      .matchScore {
+        font-size: 2.2rem;
+        font-weight: 700;
+      }
+    }
+
+    .detailBtn {
+      position: absolute;
+      right: 7%;
+      bottom: 7%;
+
+      width: 60px;
+      height: 40px;
+      border-radius: 22px;
+      background-color: rgba($themeColor, 0.9);
+      color: white;
+      text-align: center;
+      line-height: 40px;
+      font-weight: 500;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba($themeColor, 1);
+      }
+    }
+  }
+}
+
+.roommateCardSmall {
+  width: $smallW;
+  height: $smallH;
+  padding: 10px;
+  padding-left: 0;
+
+  .leftCard {
+    width: 40%;
+  }
+  .rightCard {
+    width: 60%;
+  }
+
+  .avatar {
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+  }
+
+  .matchingInfo {
+    height: 100%;
+    width: 100%;
+
+    .matchName {
+      font-size: 1.1rem !important;
+    }
+    .matchScore {
+      color: $orange;
+    }
+  }
+}
+
+.roommateCardMedium {
+  width: $smallW;
+  height: $bigH;
+
+  flex-direction: column;
+  padding-left: 2%;
+
+  .leftCard {
+    height: 47%;
+    width: 100%;
+
+    .avatar {
+      object-fit: cover;
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+    }
+  }
+
+  .rightCard {
+    width: 100%;
+    height: 53%;
+    padding-left: 10%;
+    .matchingInfo {
+      height: 120px;
+
+      .matchScore {
+        color: $orange;
+      }
+    }
+  }
+}
+
+.roommateCardLarge {
+  width: $bigW;
+  height: $bigH;
+
+  .avatar {
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+  }
+
+  .leftCard {
+    width: 50%;
+  }
+  .rightCard {
+    width: 50%;
+    padding-left: 10%;
+    padding-right: 3%;
+  }
+
+  .matchingInfo {
+    height: 150px;
+
+    .matchScore {
+      color: $themeColor;
+    }
+  }
+}
